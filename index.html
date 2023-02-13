@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="https://www.manhuacu.mg.gov.br/css/images/favicon.png">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>test</title>
+</head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+	*{
+	
+	}
+
+	body{
+		background-color: #ffffff;
+		font-family: 'Roboto Condensed';
+	}
+
+	.tab_label{
+		display: flex;
+		background-color: #1200b3;
+		padding: 10px;
+		font-size: 12px;
+		color:#fff;
+		cursor: pointer;
+		text-align: center;
+	}
+
+
+	.nav_tabs ul{
+		margin-left: 5%;
+		list-style: none;
+		text-align: center;
+	}
+
+	.nav_tabs ul li{
+		float: left;
+	}
+
+	.tab_label{
+		display: block;
+		background-color: #05006c;
+		padding: 15px;
+		font-size: 20px;
+		color:#fff;
+		cursor: pointer;
+		text-align: center;
+	}
+	.nav_tabs .rd_tab { 
+	display:none;
+	position: absolute;
+	}
+
+.nav_tabs .rd_tab:checked ~ label { 
+	background-color: orange;
+	color:#fff;
+}
+
+
+.tab-content{
+	background-color: #ffffff;
+	display: none;
+	position: absolute !important;
+	height: 320px;
+	width: 570px;
+	left: 25%;	
+	padding-bottom: 30%;
+}
+
+
+.rd_tab:checked ~ .tab-content{
+	display: block;
+}
+.tab-content h2{
+	padding: 10px;
+	color: #1200b3;
+}
+.tab-content article{
+	padding: 10px;
+	color: black;
+}
+
+
+iframe {
+ float: left;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+}
+
+p,h1{
+	text-align: center;
+}
+
+
+
+
+@media only screen and ( max-width: 1000px ) {
+
+	
+	.nav_tabs{
+		width:100%;
+		text-align: center;
+		margin:0 auto;
+		background-color: #fff;
+	}
+
+	.nav_tabs ul{
+		list-style: none;
+		text-align: center;
+		margin:0;
+	}
+
+	.nav_tabs ul li{
+		float: left;
+	}
+
+	.tab_label{
+		display: flex;
+		flex-direction: column;
+		background-color: #05006c;
+		padding: 17px;
+		font-size: 12px;
+		color:#fff;
+		cursor: pointer;
+		text-align: center;
+		border: 1px solid #fff;
+	}
+
+
+	.nav_tabs .rd_tab { 
+	display:none;
+	position: absolute;
+	}	
+
+.nav_tabs .rd_tab:checked ~ label { 
+	background-color: orange;
+	color:#fff;}
+
+.tab-content{
+	border-top: none;
+	background-color: #ffffff;
+	display: none;
+	height: 30%;
+	width: 100%;
+	top:40%;
+	left: 0;	
+	margin-top:50px;
+}
+
+.rd_tab:checked ~ .tab-content{
+	display: block;
+	margin-top: 15%;
+}
+.tab-content h2{
+	color: orange;
+}
+.tab-content article{
+	padding: 1px;
+	color: black;
+}
+
+iframe {
+float: none;
+ top: 0;
+ left: 0;
+ width: 400px;
+ height: 225px;
+}
+
+}
+
+
+
+</style>
+<body>
+	<div class="aovivo">
+		<h1>Monitoramento <span style="color: red;">AO VIVO</span> do nível do rio MANHUAÇU</h1>
+        <p><strong>(Para uma melhor visualização das câmeras </br>vire a tela do seu celular).</strong></p>
+<h4 style="text-align: center; color: red; font-weight: 500">Selecione a câmera no menu para visualizar</h4>
+	</div>
+
+	<nav class="nav_tabs">
+		<ul>
+			<li>
+				<input type="radio" id="tab1" class="rd_tab" name="tabs" checked>
+				<label for="tab1" class="tab_label">Ponte Do Silva 1</label>
+				<div class="tab-content">
+					<h2>Camera Ponte do Silva</h2>
+					<article>
+						Imagens em Tempo Real da Ponte do Silva - Câmera Rio
+					</article>
+					<iframe width="1063" height="598" src="https://rtsp.me/embed/QbG2RB5h/" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+				</div>
+			</li>
+			<li>
+				<input type="radio" name="tabs" class="rd_tab" id="tab2">
+				<label for="tab2" class="tab_label">Ponte Do Silva 2</label>
+				<div class="tab-content">
+					<h2>Camera Ponte do Silva</h2>
+					<article>
+						Imagens em Tempo Real da Ponte do Silva - Câmera Rio
+					</article>
+					<iframe width="1063" height="598" src="https://rtsp.me/embed/5stBS3Ft/" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+				</div>
+			</li>
+			<li>
+				<input type="radio" name="tabs" class="rd_tab" id="tab3">
+				<label for="tab3" class="tab_label">Ponte Dos Arcos 1</label>
+				<div class="tab-content">
+					<h2>Camera Ponte do Silva</h2>
+					<article>
+						Imagens em Tempo Real da Ponte do Silva - Câmera Rio
+					</article>
+					<iframe width="1063" height="598" src="https://rtsp.me/embed/5stBS3Ft/" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+				</div>
+			</li>
+			<li>
+				<input type="radio" name="tabs" class="rd_tab" id="tab4">
+				<label for="tab4" class="tab_label">Ponte Dos Arcos 2</label>
+				<div class="tab-content">
+					<h2>Camera Ponte do Silva</h2>
+					<article>
+						Imagens em Tempo Real da Ponte do Silva - Câmera Rio
+					</article>
+					<iframe width="1063" height="598" src="https://rtsp.me/embed/5stBS3Ft/" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+				</div>
+
+				<li>
+					<input type="radio" name="tabs" class="rd_tab" id="tab5">
+					<label for="tab5" class="tab_label">Ponte Visco.Rio Branco 1</label>
+					<div class="tab-content">
+						<h2>Camera Ponte do Silva</h2>
+						<article>
+							Imagens em Tempo Real da Ponte do Silva - Câmera Rio
+						</article>
+						<iframe width="1063" height="598" src="https://rtsp.me/embed/5stBS3Ft/" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+					</div>
+				</li>
+
+				<li>
+					<input type="radio" name="tabs" class="rd_tab" id="tab6">
+					<label for="tab6" class="tab_label">Ponte Visco.Rio Branco 2</label>
+					<div class="tab-content">
+						<h2>Camera Ponte do Silva</h2>
+						<article>
+							Imagens em Tempo Real da Ponte do Silva - Câmera Rio
+						</article>
+						<iframe width="1063" height="598" src="https://rtsp.me/embed/5stBS3Ft/" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+					</div>
+				</li>
+			</li>
+		</ul>
+	</nav>
+
+
+
+</div>
+</body>
+</html>
